@@ -1,4 +1,4 @@
-# credits to @mrconfused 
+
 
 import asyncio
 import datetime
@@ -20,12 +20,12 @@ from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 
 from var import Var
 
-from userbot import CMD_LIST, LOAD_PLUG, LOGS, SUDO_LIST, bot
-from userbot.helpers.exceptions import CancelProcess
+from skembot import CMD_LIST, LOAD_PLUG, LOGS, SUDO_LIST, bot as skem
+from skembot.helpers.exceptions import CancelProcess
 
 ENV = bool(os.environ.get("ENV", False))
 if ENV:
-    from userbot.uniborgConfig import Config
+    from skembot.uniborgConfig import Config
 else:
     if os.path.exists("config.py"):
         from config import Development as Config
